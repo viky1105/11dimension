@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll across the whole page */
+html, body, #root {
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+  background: #000;
+}
+
+/* Reusable neon text */
+.neon {
+  text-shadow:
+    0 0 10px rgba(0,240,255,0.7),
+    0 0 20px rgba(0,240,255,0.5),
+    0 0 40px rgba(0,240,255,0.3);
+}
+
+/* Card hover glow */
+.card-hover {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 28px rgba(255,0,230,0.25), 0 0 18px rgba(0,240,255,0.25);
+}
